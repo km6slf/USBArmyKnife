@@ -17,13 +17,12 @@ https://esptool.spacehuhn.com/
 <img width="1271" height="824" alt="image" src="https://github.com/user-attachments/assets/cd834a07-9afe-494c-858e-3aab23712c21" />
 
 <strong>Step 3: Connect to your AtomS3U</strong><br><br>
-Hold the reset button on the side of the M5Stack AtomS3U while plugging it in, and for a couple seconds afterwards. You'll see the green LED light up briefly. 
-At the web-based programmer, click connect. You'll get this pop-up. <img width="573" height="328" alt="image" src="https://github.com/user-attachments/assets/0e9ade75-c134-4d1f-8cdd-67d8d0fb323f" />
-<br>
-Select the device (note that your port number may be different).
+Hold the reset button on the side of the M5Stack AtomS3U while plugging it in, and for a couple seconds afterwards. You'll see the green LED light up briefly. Select the device (note that your port number may be different).
+At the web-based programmer, click connect. You'll get this pop-up.<br> <img width="573" height="328" alt="image" src="https://github.com/user-attachments/assets/0e9ade75-c134-4d1f-8cdd-67d8d0fb323f" />
+
+
 <br>
 <strong>Step 4: Load the files into the programmer and program your AtomS3U<strong></strong><br><br>
-<br>
 Then add the files you downloaded in step 1 with the appropriate memory block offset IDs.
 <table>
   <thead>
@@ -44,11 +43,13 @@ When your web programming interface looks like this, you're ready to program you
 <img width="826" height="481" alt="image" src="https://github.com/user-attachments/assets/194537c5-857d-49f9-9c59-f4375decfe3a" />
 <br>
 Click Program. Watch the terminal. When it says it's finished, your device is ready to use. 
+  <br><br>
 <strong>Step 5: Enjoy!</strong><br>
 <br>
 To use it, look for a WiFi AP called iPhone 14 or similar. Connect to it using "password" as the password. Then go to 4.3.2.1:8080 in your web browser to get started. 
 
-
+<br>All below is from the original i-am-shodan repo and is not changed, and will not be updated or modified in this fork<br>
+<hr>
 
 
 <a href="https://github.com/i-am-shodan/USBArmyKnife/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
@@ -208,6 +209,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=i-am-shodan/USBArmyKnife&type=Date)](https://star-history.com/#i-am-shodan/USBArmyKnife&Date)
+
 
 
 
