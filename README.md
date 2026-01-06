@@ -1,3 +1,56 @@
+<strong>Introduction:</strong><br><br>
+See the original information from i-am-shodan below or better yet, here: <a href="https://github.com/i-am-shodan/USBArmyKnife">https://github.com/i-am-shodan/USBArmyKnife</a>
+
+This forked repo contains all the files and info needed to set up a <a href="https://amzn.to/4jwdhha" target="_blank">M5Stack AtomS3U</a>. That's the only material I added and I don't plan to make any further changes, though I may add details to support an external microphone in the future if I decide to continue work on this. 
+
+<strong>Step 1: Download the files you'll need</strong><br><br>
+You can clone the entire repo, or just download these 5 files from the list above:<br>
+boot_app0.bin<br>
+partitions.bin<br>
+spiffs.bin<br>
+bootloader.bin<br>
+firmware.bin<br>
+
+<strong>Step 2: Set up the web-based programmer</strong><br><br>
+Use the web-based programmer.
+https://esptool.spacehuhn.com/
+<img width="1271" height="824" alt="image" src="https://github.com/user-attachments/assets/cd834a07-9afe-494c-858e-3aab23712c21" />
+
+<strong>Step 3: Connect to your AtomS3U</strong><br><br>
+Hold the reset button on the side of the M5Stack AtomS3U while plugging it in, and for a couple seconds afterwards. You'll see the green LED light up briefly. 
+At the web-based programmer, click connect. You'll get this pop-up. <img width="573" height="328" alt="image" src="https://github.com/user-attachments/assets/0e9ade75-c134-4d1f-8cdd-67d8d0fb323f" />
+<br>
+Select the device (note that your port number may be different).
+<br>
+<strong>Step 4: Load the files into the programmer and program your AtomS3U<strong></strong><br><br>
+<br>
+Then add the files you downloaded in step 1 with the appropriate memory block offset IDs.
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Offset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>bootloader.bin</td><td>0000</td></tr>
+    <tr><td>partitions.bin</td><td>8000</td></tr>
+    <tr><td>boot_app0.bin</td><td>E000</td></tr>
+    <tr><td>firmware.bin</td><td>10000</td></tr>
+    <tr><td>spiffs.bin</td><td>670000</td></tr>
+  </tbody>
+</table>
+When your web programming interface looks like this, you're ready to program your device. The order of the attachments doesn't matter.
+<img width="826" height="481" alt="image" src="https://github.com/user-attachments/assets/194537c5-857d-49f9-9c59-f4375decfe3a" />
+<br>
+Click Program. Watch the terminal. When it says it's finished, your device is ready to use. 
+<strong>Step 5: Enjoy!</strong><br>
+<br>
+To use it, look for a WiFi AP called iPhone 14 or similar. Connect to it using "password" as the password. Then go to 4.3.2.1:8080 in your web browser to get started. 
+
+
+
+
 <a href="https://github.com/i-am-shodan/USBArmyKnife/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 [![PlatformIO CI](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/main.yml/badge.svg)](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/main.yml)
 [![.NET](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/dotnet.yml/badge.svg)](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/dotnet.yml)
@@ -155,5 +208,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=i-am-shodan/USBArmyKnife&type=Date)](https://star-history.com/#i-am-shodan/USBArmyKnife&Date)
+
 
 
